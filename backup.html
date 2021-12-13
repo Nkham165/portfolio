@@ -1,0 +1,326 @@
+
+/*This is just back up HTML, CSS, and JS in case I need to use them*/
+ 		<hr>
+ 		<p><a href="https://saintpaul.edu" target="_blank">Saint Paul College</a></p>
+ 		<p><a href="mailto:@website.com" target="_blank">My Email</a> &bull;
+ 		<a href="tel:6513674129">Call Me </a> &bull;
+ 		<a href="sms:6513674129">Text Me </a>
+ 		</p>
+ 		<small>&copy; Nicholas Khammarath</small>
+ 		<iframe width="50%" height="315" src="https://www.youtube.com/embed/GIfydZzZieg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+ 		nav a{
+	text-decoration: none;
+	padding: 10px;
+}
+<li><a href="resume.html">Resume</a></li>
+/*hamburger drop menu*/
+/* Style the navigation menu */
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+  position: relative;
+}
+/* Hide the links inside the navigation menu (except for logo/home) */
+.topnav #myLinks {
+  display: none;
+}
+/* Style navigation menu links */
+.topnav a {
+  color: white;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  display: block;
+}
+/* Style the hamburger menu */
+.topnav a.icon {
+  background: black;
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+/* Add a grey background color on mouse-over */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+/* Style the active link (or home/logo) */
+.active {
+  background-color: #04AA6D;
+  color: white;
+}
+		<ul>
+			<div class="topnav">
+				<a href="#home" class="active">Logo</a>
+				<div id="myLinks">
+					<ul>
+					<li class="nav-item active"><a href="index.html">Home</a></li>
+					<li class="nav-item active"><a href="resume.html">Resume</a></li>
+					<li class="nav-item active"><a href="portfolio.html">Portfolio</a></li>
+					<li class="nav-item active"><a href="table.html">Table</a></li>
+					<li class="nav-item active"><a href="form.html">Form</a></li>
+					<li class="nav-item active"><a href="multimedia.html">Multimedia</a></li>
+					<li class="nav-item active"><a href="flappy.html">Javascript</a></li>
+					</ul>
+				</div>
+				<a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    			<i class="fa fa-bars"></i>
+  				</a>
+  			</div>
+  			<script>
+  				function myFunction() {
+				  var x = document.getElementById("myLinks");
+				  if (x.style.display === "block") {
+				    x.style.display = "none";
+				  } else {
+				    x.style.display = "block";
+				  }
+				}
+			</script>
+/*THis is the OG Nav*/
+	<header>
+		<img src="images/WebsiteLogo.png" alt="Logo" height="200" width="400" class="img-fluid logo">
+	</header>
+	<nav class="navbar navbar-expand-sm navbar-light bg-light">
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+  	</button>
+ 		<ul>
+			<li class="nav-item active"><a href="index.html">Home</a></li>
+			<li class="nav-item active"><a href="resume.html">Resume</a></li>
+			<li class="nav-item active"><a href="portfolio.html">Portfolio</a></li>
+			<li class="nav-item active"><a href="table.html">Table</a></li>
+			<li class="nav-item active"><a href="form.html">Form</a></li>
+			<li class="nav-item active"><a href="multimedia.html">Multimedia</a></li>
+			<li class="nav-item active"><a href="flappy.html">Javascript</a></li>
+		</ul>
+	</nav>
+<header>
+		<div class="container">
+			<nav>
+				<img src="images/WebsiteLogo.png" alt="Logo" height="200" width="400" class="img-fluid logo">
+				<button class="hamburger" id="hamburger">
+					<i class="fa fa-bars" aria-hidden="true"></i>
+				</button>
+				<ul class="nav-ul" id="nav-ul">
+					<li class="nav-item active"><a href="index.html">Home</a></li>
+					<li class="nav-item active"><a href="resume.html">Resume</a></li>
+					<li class="nav-item active"><a href="portfolio.html">Portfolio</a></li>
+					<li class="nav-item active"><a href="table.html">Table</a></li>
+					<li class="nav-item active"><a href="form.html">Form</a></li>
+					<li class="nav-item active"><a href="multimedia.html">Multimedia</a></li>
+					<li class="nav-item active"><a href="flappy.html">Javascript</a></li>
+				</ul>
+			</nav>
+	</header>
+/*OG CSS*/
+@import url('https: //fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;1,600&display=swap');
+header{
+	height: 100%;
+	width: 100%;
+	border-top: 5px solid black;
+	border-bottom: 5px solid black;
+	background-color: #666666;
+}
+header img{
+	float: left;
+	margin-left: -100px;
+}
+h1{
+	padding: 10px;
+	font-size: 30px;
+	background-color: lightgray;
+	border: 3px solid black;
+}
+nav{
+	text-decoration-color: white;
+	background-color: #666666;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+nav ul{
+	text-align: center;
+	padding: 35px;
+}
+.nav-ul{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 0;
+	list-style-type: none;
+}
+.nav-ul li a{
+	display: inline-block;
+	padding: 10px 20px;
+	text-decoration: none;
+}
+.hamburger{
+	display: none;
+	background-color: transparent;
+	border: 0;
+	color: white;
+	cursor: pointer;
+	font-size: 30px;
+}
+.hamburger:focus{
+	outline: none;
+}
+nav li{
+	display: inline;
+	padding: 0px 5px;
+	margin: 10px;
+	border-radius: 5px black;
+	background-color: white;
+	color: black;
+}
+nav li:hover{
+	background-color: lightgray;
+}
+nav a:active{
+	color: lightgray;
+}
+nav a:visited{
+	color: black;
+}
+nav a{
+	text-decoration: none;
+}
+body{
+	font-family: 'Montserrat', sans-serif;
+}
+main{
+	margin:40px;
+	max-width: 100%;
+}
+canvas{
+	background-color: white;
+    margin: 0 auto;
+    display: block;
+    background-image: url(images/starryspace.png);
+    border: 10px solid;
+    box-shadow: 2px 2px 6px black;
+}
+form{
+	margin: 0 auto;
+}
+.myButton {
+    box-shadow: inset 0px 1px 3px 0px #91b8b3;
+    background: linear-gradient(to bottom, #768d87 5%, #6c7c7c 100%);
+    background-color: #768d87;
+    border-radius: 5px;
+    border: 1px solid #566963;
+    display: inline-block;
+    cursor: pointer;
+    color: #ffffff;
+    font-family: Arial;
+    font-size: 15px;
+    font-weight: bold;
+    padding: 11px 23px;
+    text-decoration: none;
+    text-shadow: 0px -1px 0px #2b665e;
+}
+.nyan{
+	float: left;
+	max-width: %40;
+	height: auto;
+	display: block;
+	padding: 10px;
+}
+.about{
+	overflow: hidden;
+}
+table {
+    background-color: #eeeeee;
+    border-spacing: 0;
+    margin-bottom: 100px;
+    display: table;
+    border-collapse: collapse;
+    box-sizing: border-box;
+    border-color: black;
+}
+td, th{
+	border: 2px solid black;
+	padding: 10px;
+}
+th{
+	background-color: white;
+	color: black;
+}
+form{
+	background-color: lightgray;
+	border: 1px solid black;
+	padding: 20px;
+	max-width: 350px;
+}
+label{
+	float: left;
+	width: 8em;
+	padding-right: 1em;
+}
+input, textarea{
+	margin-bottom: 1em;
+	display: block;
+}
+#submit{
+	display: block;
+	background-color: white;
+}
+footer{
+    color: white;
+    background-color: #666666;
+    margin: 40px 0 0 0;
+    display: block;
+    padding: 20px;
+    border-top: 3px solid black;
+}
+.footer-bottom{
+    background-color: white;
+    padding: 10px 50px;
+    color: black;
+    text-align: center;
+    border: 3px solid black;
+}
+footer a:link{
+    color:white;
+}
+
+/* CSS for Tablets */
+
+@media only screen and (max-width: 1024px){
+	.nav-ul{
+		display: none;
+		width: 100%;
+		flex-direction: column;
+	}
+	.nav-ul.show{
+		display: flex;
+	}
+	.hamburger{
+		display: block;
+	}
+	h1{
+		font-size: 2em;
+	}
+}
+
+/* CSS for Smartphones */
+
+@media only screen and (max-width: 768px){
+	.nav-ul{
+		display: none;
+		width: 100%;
+		flex-direction: column;
+	}
+	.nav-ul.show{
+		display: flex;
+	}
+	.hamburger{
+		display: block;
+	}
+
+	h1{
+		font-size: 1.5em;
+	}
+}
